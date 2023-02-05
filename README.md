@@ -1,48 +1,58 @@
 
-# Cart
-The task is to create a react based application which uses the concept of `useContext` and `useReducer` for building a cart, Using the pre-defined cart items.
+# Tours
+The task is to create a react based application which uses the concept of `useState` for building an application to show the details of tours using pre-defined tour items.
 
 ```
 [
   {
-    id: 1,
-    title: "Samsung Galaxy S7",
-    price: 599.99,
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1583368215/phone-2_ohtt5s.png",
-    amount: 1,
+    "id": "rec6d6T3q5EBIdCfD",
+    "name": "Best of Paris in 7 Days Tour",
+    "info": "Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas. On this tour, your Paris-savvy Rick Steves guide will immerse you in the very best of the City of Light: the masterpiece-packed Louvre and Orsay museums, resilient Notre-Dame Cathedral, exquisite Sainte-Chapelle, and extravagant Palace of Versailles. You'll also enjoy guided neighborhood walks through the city's historic heart as well as quieter moments to slow down and savor the city's intimate cafés, colorful markets, and joie de vivre. Join us for the Best of Paris in 7 Days!",
+    "image": "https://dl.airtable.com/.attachments/a0cd0702c443f31526267f38ea5314a1/2447eb7a/paris.jpg",
+    "price": "1,995"
   },
   {
-    id: 2,
-    title: "google pixel ",
-    price: 499.99,
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1583371867/phone-1_gvesln.png",
-    amount: 1,
+    "id": "recIwxrvU9HfJR3B4",
+    "name": "Best of Ireland in 14 Days Tour",
+    "info": "Rick Steves' Best of Ireland tour kicks off with the best of Dublin, followed by Ireland's must-see historical sites, charming towns, music-filled pubs, and seaside getaways — including Kinsale, the Dingle Peninsula, the Cliffs of Moher, the Aran Islands, Galway, Connemara, Giant's Causeway, and the compelling city of Belfast. All along the way, Rick's guides will share their stories to draw you in to the Emerald Isle, and the friendliness of the people will surely steal your heart. Join us for the Best of Ireland in 14 Days!",
+    "image": "https://dl.airtable.com/.attachments/6c24084000a3777064c5200a8c2ae931/04081a3e/ireland.jpeg",
+    "price": "3,895"
   },
   {
-    id: 3,
-    title: "Xiaomi Redmi Note 2",
-    price: 699.99,
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1583368224/phone-3_h2s6fo.png",
-    amount: 1,
+    "id": "recJLWcHScdUtI3ny",
+    "name": "Best of Salzburg & Vienna in 8 Days Tour",
+    "info": "Let's go where classical music, towering castles, and the-hills-are-alive scenery welcome you to the gemütlichkeit of Bavaria and opulence of Austria's Golden Age. Your Rick Steves guide will bring this region's rich history and culture to life in festive Munich, Baroque Salzburg, sparkling Lake Hallstatt, monastic Melk, the blue Danube, and royal Vienna — with cozy villages and alpine vistas all along the way. Join us for the Best of Munich, Salzburg & Vienna in 8 Days!",
+    "image": "https://dl.airtable.com/.attachments/27f6cbfe631e303f98b97e9dafacf25b/6bbe2a07/vienna.jpeg",
+    "price": "2,695"
   },
+  {
+    "id": "recK2AOoVhIHPLUwn",
+    "name": "Best of Rome in 7 Days Tour",
+    "info": "Our Rome tour serves up Europe's most intoxicating brew of dazzling art, earth-shaking history, and city life with style. On this Rome vacation, your tour guide will resurrect the grandeur of ancient Rome's Colosseum, Forum, Pantheon, and nearby Ostia Antica. From the Renaissance and Baroque eras, you'll marvel at St. Peter's Basilica, the Vatican Museums, Sistine Chapel, and Borghese Gallery. You'll also enjoy today's Rome, with neighborhood walking tours, memorable restaurants, and time to explore on your own. Join us for the Best of Rome in 7 Days!",
+    "image": "https://dl.airtable.com/.attachments/3efa7aa402d49c12b8769c581a96af42/d5b641e3/italy.jpeg",
+    "price": "2,095"
+  },
+  {
+    "id": "receAEzz86KzW2gvH",
+    "name": "Best of Poland in 10 Days Tour",
+    "info": "Starting in the colorful port city of Gdańsk, you'll escape the crowds and embrace the understated elegance of ready-for-prime-time Poland for 10 days. With an expert Rick Steves guide at your side, you'll experience mighty Malbork castle, the cobbly-cute village of Toruń, Poland's contemporary capital of Warsaw, the spiritual Jasna Góra Monastery, and charming Kraków — Poland's finest city. In this land of surprises — so trendy and hip, yet steeped in history — there's so much to discover. Join us for the Best of Poland in 10 Days!",
+    "image": "https://dl.airtable.com/.attachments/3feee7a93af0f4f809312132090c9a80/58e3e8ec/poland.jpeg",
+    "price": "2,595"
+  }
 ]
 ```
-The cart should support following features.
-- <b>Navbar</b> : The application should contain a Navbar having text "useReducer" and a cart logo indicating the number of cart elements.
-- <b> Show the Item list</b> : The cart should render the item list as name of the item , it's price and the number of items / amount currently added to cart.  
-- <b>Increase/decrease item</b> : The user should be able to increase or decrease the item count using button.
-- <b>Clear cart</b> : The user must be able to clear the entire cart, thus users should be able to delete every items in the cart.
-- <b>Remove Items</b> : The application user must have an button for removing the particular item from the cart.
-- <b>Total amount</b> : The application should reflect the total amount of the entire items.
+The Application should support following features.
+- <b> Show the Tour list</b> : The user should be able to see all the tours.  
+- <b>Show more/See less</b> : The user should be able to see the complete info or first 200 words by clicking on a button.
+- <b>Delete Tour</b> : The user must be able to delete a tour by clicking on a button.
+- <b>Loading</b> : The application must show the text loading every time user loads the page.
+- <b>No tours left</b> : If all the tours are deleted, then application should show the text -"No more tours" and a refresh button to refresh the page.
 
- 
 ###  Instructions
 
 - id for the top jsx in `app.js` should be <b>"main"</b>
-- cart increment and decrement buttons should have id as <b>"increment-btn-`id`" </b>and <b>"decrement-btn-`id`"</b> where id reflects the id of the cart item.
-- The cart items should be wrapped in a html tag with id=<b>"cart-items-list"</b>.if there is no element in the cart then this section should not be rendered i.e we should render something which says  "Cart is currently empty".
-- clear cart button should have an id of <b>"clear-all-cart"</b>.
-- The tag which wraps the total amount should have an id=<b>"cart-total-amount".</b>
-- The price of each item should be wrapped in a tag with id=<b>"cart-item-price-`id`"</b>, where `id` is `id` of the item.
-- The amount of each item should be wrapped in a tag with id=<b>"cart-amount-`id`"</b>.
-- navbar should show the amount of items present having an id of <b>"nav-cart-item-count"</b>
+- Delete tour button should have class as <b>"delete-btn"</b>.
+- Title of the page should have class name as <b>"title"</b>.
+- Each tour item should be wrapped in a html tag with class name=<b>"single-tour"</b>. The info, price of each tour are wrapped in a html tag with class = <b>"tour-info"</b> and <b>"tour-price"</b> respectively
+- Loading text should be wrapped in a html tag with class name= <b>"loading"</b>
+- When all the tours are deleted the refresh button should have a class <b>"btn"</b>
